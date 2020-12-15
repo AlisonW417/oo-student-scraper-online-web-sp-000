@@ -10,7 +10,10 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    students_array.each do |student|
+    Student.new = students_array.each do |s| 
+      s.name = students_array[0]
+      s.location = students_array[1]
+    end 
       
   end
 
