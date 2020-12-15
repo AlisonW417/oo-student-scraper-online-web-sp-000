@@ -1,3 +1,4 @@
+require 'pry'
 class Student
 
   attr_accessor :name, :location, :twitter, :linkedin, :github, :blog, :profile_quote, :bio, :profile_url 
@@ -10,6 +11,7 @@ class Student
   end
 
   def self.create_from_collection(students_array)
+    binding.pry
     Student.new = students_array.each do |s| 
       s.name = students_array[0]
       s.location = students_array[1]
